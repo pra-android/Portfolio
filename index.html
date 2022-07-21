@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Portfolio</title>
+<style>
+*{
+	margin: 0;
+	padding:0;
+	box-sizing: border-box;
+}	
+header{
+	display: flex;
+	align-items: center;
+	justify-content: space-between;
+	width:100%;
+	height:70px;
+	background-color: white;
+	
+}
+.logo h2{
+	padding-left: 25px;
+	font-size:32px;
+	padding-bottom: 5px;
+	font-family: cursive;
+	color:purple;
+}
+.navbar{
+	display: flex;
+	align-items: center;
+}
+.navbar li{
+	list-style: none;
+
+
+}
+.navbar li a{
+	text-decoration: none;
+	color:green;
+    font-size:22px;
+	padding:0 25px;
+	}
+.navbar li a:hover{
+	
+	border-radius: 9px;
+	background-color: rgba(0,0,0,.1);
+	color:grey;
+	cursor: pointer;
+}	
+#home{
+	display: flex;
+	flex-direction: column;
+	padding:2px 170px 170px ;
+	color:white;
+
+	height:460px;
+	justify-content: center;
+	align-items: center;
+}
+#home::before{
+	content:"";
+    box-sizing: border-box;
+	z-index: -1;
+	background:url('green.jpg') no-repeat center center/cover;
+	position: absolute;
+	width:100%;
+	height: 100%;
+	
+
+}
+#home h1{
+	color:black;
+    
+	text-align: center;
+}
+#home p{
+	padding:20px;
+	margin:5px 0;
+	color:white;
+
+}
+#btn{
+	padding:4px 12px;
+	border:2px solid white;
+	background-color:brown;
+	border-radius: 10px;
+	color:white;
+	margin:13px;
+	cursor: pointer;
+	font-size:1.5rem;
+}
+#btn:hover{
+	background-color:black;
+}
+#box{
+	display: flex;
+    align-items: center;
+    justify-content:space-between;
+
+}
+.item{
+	margin:15px;
+	border:3px dotted green;
+	border-width:3px;
+}
+#box .item h2
+{
+	text-align: center;
+}
+#box .item p{
+	text-align: center;
+}
+#box .item img{
+	margin:10px;
+}
+#butter{
+	margin-left: 6px;
+	height:35px;
+	width:120px;
+	border-radius: 10px;
+	background-color: purple;
+	color:white;
+	display: block;
+	margin:auto;
+	cursor: pointer;
+}
+#butter:hover{
+	transform: scale(0.98);
+	background-color:black;
+}
+#foot{
+	height:40px;
+	background-color: black;
+	color:white;
+	font-size:18px;
+	justify-content: space-around;
+	align-items: center;
+	display: flex;
+
+}
+#foot a{
+	text-decoration: none;
+	color:yellow;
+	font-size:20px;
+}
+#foot a:hover{
+	text-decoration: underline;
+	border-radius: 5px;
+}
+@media (max-width:1000px)
+{
+	body{
+		background-color: red;
+	}
+	nav{
+		margin:auto;
+	}
+	#box{
+		flex-direction: column;
+		overflow: hidden;
+		height:1000px;
+	}
+	#box p{
+		font-size:20px;
+	}
+	#home::before{
+		height:600px;
+	}
+	#home{
+		margin:5px;
+		flex-direction: column;
+		height:460px;
+		margin:50px;
+	}
+	#foot{
+		height:300px;
+		margin-top:200px;
+	}
+	main h2{
+		font-size:26px;
+	}
+	
+}
+</style>	
+</head>
+<body>
+<header>
+<div class="logo">
+<h2>Portfolio</h2>	
+</div>
+<nav class="navbar">
+<li><a href="#">Home</a></li>	
+<li><a href="#foot">Contact</a></li>	
+<li><a href="#box">Services</a></li>	
+<li><a href="#">Blog</a></li>	
+</nav>
+</header>
+<hr>	
+<section id="home">
+<h1><b>About Myself</b></h1>	
+<p>
+It is I Prabin Bhattarai studying Bsc.Csit in Biratangar.I  have skills<b> HTML,CSS,WORDPRESS</b>,etc. I have interest on web based application and Software development. MY hobbies are Traveeling, Acting  and be with children.I have also skills of Programming language like C ,C++,etc.I am currently pursuing Bachelor degree. I am  passionately  interest on teaching these course.</p>
+<button id="btn">Explore Blog</button>
+</section>	
+<hr>
+<main>
+<h2 style="color:purple;text-align: center; margin: 10px;">Courses Available</h2>	
+<div id="box">
+<div class="item">
+<img src="wo.png">
+<h2>HTML/CSS Course</h2>	
+<p>Learn Wordpress in  Nepali from scratch</p>
+<button id="butter">Join Now</button>
+</div>	
+<div class="item">
+<img src="htm.jpg">
+<h2>HTML,CSS</h2>	
+<p>Learn Html,css in Nepali from scratch</p>
+<button id="butter">Join Now</button>
+</div>
+<div class="item">
+<img src="cpo.jpg">
+<h2>C-programming</h2>	
+<p>Learn C-programming in Nepali from scratch</p>
+<button id="butter">Join Now</button>
+</div>
+</div>
+</main>	
+<footer id="foot">
+<p>Copyright &copy;2079 Pravinbhattarai</p>	
+<a href="https://www.facebook.com/profile.php?id=100026210603687">Facebook</a>
+<a href="https://github.com/pra-android?fbclid=IwAR3Wdca4PL2cjMgFcQuL2Jpozc4InP4LxG1aKrrsVSUZswn3wk4fjLJEeJg">Github</a>
+
+</footer>	
+
+
+</body>
+</html>
